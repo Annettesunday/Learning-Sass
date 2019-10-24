@@ -26,7 +26,7 @@ body {
     wrap: nowrap;
   }
   align-items: center;
-  padding: 3rem 0;
+  padding: $size-default * 3 0;
   box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@ body {
   background: lighten(map-get($colors, main), 72%);
   padding: 2rem;
   text-align: center;
-  box-shadow: $size-tiny $size-tiny 0.1rem #ccc;
+  box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
   width: 90%;
   box-sizing: border-box;
 }
@@ -49,7 +49,7 @@ body {
   background: lighten(map-get($colors, main), 72%);
   padding: $size-default;
   text-align: center;
-  margin: 2rem 0;
+  margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
 }
@@ -98,6 +98,6 @@ body {
 
   .sass-introduction,
   .sass-details {
-    width: 30rem;
+    width: $size-default * 30;
   }
 }
